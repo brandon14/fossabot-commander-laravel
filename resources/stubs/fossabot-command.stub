@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace {{ namespace }};
 
 use Brandon14\FossabotCommander\FossabotCommand;
-use Brandon14\FossabotCommander\Contracts\FossabotContext;
+use Brandon14\FossabotCommander\Contracts\Context\FossabotContext;
 
 final class {{ class }} extends FossabotCommand
 {
