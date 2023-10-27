@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ namespace }};
+
+use Brandon14\FossabotCommander\FossabotCommand;
+use Brandon14\FossabotCommander\Contracts\FossabotContext;
+
+final class {{ class }} extends FossabotCommand
+{
+    /**
+     * Create a new command instance.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     */
+    public function getResponse(?FossabotContext $context = null): string
+    {
+        //
+    }
+}
