@@ -38,7 +38,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Client\ClientInterface as PsrClientInterface;
-use Brandon14\FossabotCommander\Commands\MakeFossabotCommand;
+use Brandon14\FossabotCommanderLaravel\Commands\MakeFossabotCommand;
 use Brandon14\FossabotCommander\Contracts\FossabotCommander as FossabotCommanderInterface;
 
 final class FossabotCommanderServiceProvider extends ServiceProvider
