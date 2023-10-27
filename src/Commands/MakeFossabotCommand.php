@@ -34,6 +34,11 @@ namespace Brandon14\FossabotCommanderLaravel\Commands;
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 
+/**
+ * Command to generate {@link \Brandon14\FossabotCommander\Contracts\FossabotCommand} instances.
+ *
+ * @author Brandon Clothier <brandon14125@gmail.com>
+ */
 final class MakeFossabotCommand extends GeneratorCommand
 {
     use CreatesMatchingTest;
@@ -72,6 +77,7 @@ final class MakeFossabotCommand extends GeneratorCommand
         $published = resource_path('stubs/vendor/fossabot-commander').'/fossabot-command.stub';
         $included = __DIR__.'/../../resources/stubs/fossabot-command.stub';
 
+        // Use overridden stub if present.
         if ($this->files->exists($published)) {
             return $published;
         }

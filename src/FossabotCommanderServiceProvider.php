@@ -42,6 +42,11 @@ use Psr\Http\Client\ClientInterface as PsrClientInterface;
 use Brandon14\FossabotCommanderLaravel\Commands\MakeFossabotCommand;
 use Brandon14\FossabotCommander\Contracts\FossabotCommander as FossabotCommanderInterface;
 
+/**
+ * Registers FossabotCommander services and commands with Laravel's container.
+ *
+ * @author Brandon Clothier <brandon14125@gmail.com>
+ */
 final class FossabotCommanderServiceProvider extends ServiceProvider
 {
     /**
