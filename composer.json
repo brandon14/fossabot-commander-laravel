@@ -33,7 +33,10 @@
     "autoload-dev": {
         "psr-4": {
             "Brandon14\\FossabotCommanderLaravel\\Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "require": {
         "php": "^7.4|^8.0",

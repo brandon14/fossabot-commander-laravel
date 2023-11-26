@@ -27,6 +27,9 @@
  *
  */
 
+// We don't need to worry about testing the facade.
+// @codeCoverageIgnoreStart
+
 declare(strict_types=1);
 
 namespace Brandon14\FossabotCommanderLaravel\Facades;
@@ -48,3 +51,5 @@ final class FossabotCommander extends Facade
         return 'fossabot-commander';
     }
 }
+
+// @codeCoverageIgnoreEnd

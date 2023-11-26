@@ -45,4 +45,17 @@ class TestCase extends Orchestra
             FossabotCommanderServiceProvider::class,
         ];
     }
+
+    /**
+     * Override application aliases.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return array<string, class-string<\Illuminate\Support\Facades\Facade>>
+     */
+    protected function getPackageAliases($app)
+    {
+        return [
+            'fossabot-commander' => 'Brandon14\FossabotCommanderLaravel\Facades\FossabotCommander',
+        ];
+    }
 }

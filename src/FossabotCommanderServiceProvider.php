@@ -93,7 +93,7 @@ final class FossabotCommanderServiceProvider extends ServiceProvider
                 $request = $app->make(HttpFactory::class);
             }
 
-            return new FossabotCommander($http, $request, $logger);
+            return new FossabotCommander($http, $request, $logger, $logging);
         });
 
         // Add alias.
@@ -139,8 +139,11 @@ final class FossabotCommanderServiceProvider extends ServiceProvider
      */
     public function provides(): array
     {
+        // Don't worry about testing the service provider provides.
+        // @codeCoverageIgnoreStart
         return [
             'fossabot-commander',
         ];
+        // @codeCoverageIgnoreEnd
     }
 }

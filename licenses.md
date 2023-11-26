@@ -35,7 +35,7 @@ SOFTWARE.
 
 ## Dependencies
 
-### brandon14/fossabot-commander (Version v1.0.0 | 1072399)
+### brandon14/fossabot-commander (Version v1.0.0 | 6d9c524)
 Library to easily create Fossabot commands invokable via the Fossabot customapi implementation.
 Homepage: [https://github.com/brandon14/fossabot-commander](https://github.com/brandon14/fossabot-commander)
 Licenses Used: MIT
@@ -239,7 +239,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### graham-campbell/result-type (Version v1.1.1 | 672eff8)
+### graham-campbell/result-type (Version v1.1.2 | fbd48bc)
 An Implementation Of The Result Type
 Homepage: Not configured.
 Licenses Used: MIT
@@ -390,7 +390,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### laravel/framework (Version v9.52.16 | 082345d)
+### laravel/framework (Version v10.33.0 | 4536872)
 The Laravel Framework.
 Homepage: [https://laravel.com](https://laravel.com)
 Licenses Used: MIT
@@ -417,7 +417,34 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### laravel/serializable-closure (Version v1.3.2 | 076fe2c)
+### laravel/prompts (Version v0.1.13 | e1379d8)
+Not configured.
+Homepage: Not configured.
+Licenses Used: MIT
+The MIT License (MIT)
+
+Copyright (c) Taylor Otwell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+### laravel/serializable-closure (Version v1.3.3 | 3dbf8a8)
 Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.
 Homepage: Not configured.
 Licenses Used: MIT
@@ -512,7 +539,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-### league/flysystem (Version 3.18.0 | 015633a)
+### league/flysystem (Version 3.21.0 | a326d8a)
 File storage abstraction for PHP
 Homepage: Not configured.
 Licenses Used: MIT
@@ -537,7 +564,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### league/flysystem-local (Version 3.18.0 | e7381ef)
+### league/flysystem-local (Version 3.21.0 | 470eb1c)
 Local filesystem adapter for Flysystem.
 Homepage: Not configured.
 Licenses Used: MIT
@@ -587,7 +614,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### monolog/monolog (Version 2.9.1 | f259e2b)
+### monolog/monolog (Version 3.5.0 | c915e26)
 Sends your logs to files, sockets, inboxes, databases and various web services
 Homepage: [https://github.com/Seldaek/monolog](https://github.com/Seldaek/monolog)
 Licenses Used: MIT
@@ -703,7 +730,7 @@ you URLs with full text:
 - [GPL version 3]([http://www.gnu.org/licenses/gpl-3.0.html](http://www.gnu.org/licenses/gpl-3.0.html))
 
 
-### nette/utils (Version v4.0.2 | cead663)
+### nette/utils (Version v4.0.3 | a9d127d)
 🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.
 Homepage: [https://nette.org](https://nette.org)
 Licenses Used: BSD-3-Clause, GPL-2.0-only, GPL-3.0-only
@@ -796,7 +823,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### phpoption/phpoption (Version 1.9.1 | dd3a383)
+### phpoption/phpoption (Version 1.9.2 | 80735db)
 Option Type for PHP
 Homepage: Not configured.
 Licenses Used: Apache-2.0
@@ -1262,7 +1289,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### ramsey/uuid (Version 4.7.4 | 60a4c63)
+### ramsey/uuid (Version 4.7.5 | 5f0df49)
 A PHP library for generating and working with universally unique identifiers (UUIDs).
 Homepage: Not configured.
 Licenses Used: MIT
@@ -1287,7 +1314,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### symfony/console (Version v6.3.4 | eca495f)
+### symfony/console (Version v6.3.8 | 0d14a9f)
 Eases the creation of beautiful and testable command line interfaces
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1337,7 +1364,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/deprecation-contracts (Version v3.3.0 | 7c3aff7)
+### symfony/deprecation-contracts (Version v3.4.0 | 7c3aff7)
 A generic function and convention to trigger deprecation notices
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1412,7 +1439,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/event-dispatcher-contracts (Version v3.3.0 | a76aed9)
+### symfony/event-dispatcher-contracts (Version v3.4.0 | a76aed9)
 Generic abstractions related to dispatching event
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1462,7 +1489,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/http-foundation (Version v6.3.6 | c186627)
+### symfony/http-foundation (Version v6.3.8 | ce33267)
 Defines an object-oriented layer for the HTTP specification
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1487,7 +1514,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/http-kernel (Version v6.3.6 | 4945f50)
+### symfony/http-kernel (Version v6.3.8 | 9292023)
 Provides a structured process for converting a Request into a Response
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1862,7 +1889,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/service-contracts (Version v3.3.0 | 40da9cc)
+### symfony/service-contracts (Version v3.4.0 | b3313c2)
 Generic abstractions related to writing services
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1887,7 +1914,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/string (Version v6.3.5 | 13d76d0)
+### symfony/string (Version v6.3.8 | 13880a8)
 Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1912,7 +1939,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/translation (Version v6.3.6 | 869b26c)
+### symfony/translation (Version v6.3.7 | 30212e7)
 Provides tools to internationalize your application
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1937,7 +1964,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/translation-contracts (Version v3.3.0 | 02c24de)
+### symfony/translation-contracts (Version v3.4.0 | dee0c6e)
 Generic abstractions related to translation
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1962,7 +1989,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/uid (Version v6.3.0 | 01b0f20)
+### symfony/uid (Version v6.3.8 | 819fa5a)
 Provides an object-oriented API to generate and represent UIDs
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1987,7 +2014,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/var-dumper (Version v6.3.6 | 999ede2)
+### symfony/var-dumper (Version v6.3.8 | 81acabb)
 Provides mechanisms for walking through any arbitrary PHP variable
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -2041,7 +2068,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-### vlucas/phpdotenv (Version v5.5.0 | 1a7ea2a)
+### vlucas/phpdotenv (Version v5.6.0 | 2cf9fb6)
 Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
 Homepage: Not configured.
 Licenses Used: BSD-3-Clause
