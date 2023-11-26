@@ -34,6 +34,9 @@ namespace Brandon14\FossabotCommanderLaravel\Commands;
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 
+// Ignore code coverage on this command for now until we write tests for it.
+// @codeCoverageIgnoreStart
+
 /**
  * Command to generate {@link \Brandon14\FossabotCommander\Contracts\FossabotCommand} instances.
  *
@@ -85,3 +88,5 @@ final class MakeFossabotCommand extends GeneratorCommand
         return $included;
     }
 }
+
+// @codeCoverageIgnoreEnd

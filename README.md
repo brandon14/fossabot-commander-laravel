@@ -1,12 +1,13 @@
 <!-- markdownlint-disable MD033 -->
 <p align="center">
+  <a href="https://packagist.org/packages/brandon14/fossabot-commander-laravel" target="_blank"><img alt="Packagist PHP Version" src="https://img.shields.io/packagist/dependency-v/brandon14/fossabot-commander-laravel/php?style=for-the-badge&cacheSeconds=3600"></a>
+</p>
+<p align="center">
   <a href="https://github.com/brandon14/fossabot-commander-laravel/actions/workflows/run-tests.yml" target="_blank"><img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/brandon14/fossabot-coimmander/run-tests.yml?style=for-the-badge&cacheSeconds=3600">
   </a>
   <a href="https://codeclimate.com/github/brandon14/fossabot-commander-laravel/maintainability" target="_blank"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability-percentage/brandon14/fossabot-commander-laravel?style=for-the-badge&cacheSeconds=3600">
   </a>
   <a href="https://codecov.io/gh/brandon14/fossabot-commander-laravel" target="_blank"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/brandon14/fossabot-commander-laravel?style=for-the-badge&cacheSeconds=3600">
-  </a>
-  <a href="https://libraries.io/packagist/brandon14/fossabot-commander-laravel" target="_blank"><img alt="Libraries.io dependency status for latest release" src="https://img.shields.io/librariesio/release/packagist/brandon14%2Ffossabot-commander?style=for-the-badge&cacheSeconds=3600">
   </a>
   <a href="https://github.com/brandon14/fossabot-commander-laravel/blob/main/LICENSE" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/license/brandon14/fossabot-commander-laravel?style=for-the-badge&cacheSeconds=3600">
   </a>
