@@ -50,39 +50,25 @@
 
 ## Requirements
 
-| Dependency             | Version        |
-|------------------------|----------------|
-| php                    | ^7.4 \|\| ^8.0 |
-| ext-json               | *              |
-| psr/http-factory       | ^1.0           |
-| psr/http-client        | ^1.0           |
-| psr/log                | ^1.0           |
-| symfony/polyfill-php80 | ^1.0           |
-| symfony/polyfill-php81 | ^1.0           |
+| Dependency                    | Version                   |
+|-------------------------------|---------------------------|
+| php                           | ^7.4 \|\| ^8.0            |
+| brandon14/fossabot-commander  | ^1.0.0                    |
+| guzzlehttp/guzzle             | ^6.5.8 \|\| ^7.4.5        |
+| illuminate/console            | ^8.0 \|\| ^9.0 \|\| ^10.0 |
+| illuminate/support            | ^8.0 \|\| ^9.0 \|\| ^10.0 |
 
 ## Purpose
 
-I built this library to aid in responding to [Fossabot's](https://docs.fossabot.com/variables/customapi)
-`customapi` requests when using PHP. If you are running a webserver and want to send Fossabot `customapi`
-requests to that server, this package allows you to easily write commands and run them to return the text
-that would display in the chat message. The reason the commands return strings is because Fossabot
-Fossabot discards any status codes and other HTTP response content, and only uses the raw response body
-which is a string. This string can be JSON, text, etc.
+This is a simple wrapper for the [fossabot-commander](https://github.com/brandon14/fossabot-commander)
+package for Laravel. This allows for easy integration into a Laravel project.
 
-The normal usage for Fossabot's `customapi` might be something like:
-
-Set command `!foo` to `$(customapi https://foo.bar/foo)`.
-
-When someone types `!foo` in your chat, 
-Fossabot will make a request to `https://foo.bar/foo` and whatever that URl returns will be used as the
-chat message. With this package, you can easily create commands, and invoke them via the
-`FossabotCommander::runCommand()` method, and use these utilties in you web framework of choice.
-
-This library validates the Fossabot request using the [request validation](https://docs.fossabot.com/variables/customapi/#validating-requests)
-endpoint so you can be sure that the request came from Fossabot. You can also optionally (on by default)
-choose to get additional context about the request as outlined [here](https://docs.fossabot.com/variables/customapi/#validating-requests)
-to provide more rich integrations with Fossabot. The `FossabotContext` data will be passed into the
-command's `getResponse` method.
+This library provides all the bindings for the Laravel IoC container to set up
+the fossabot-commander library, and also includes a helper function
+`fossabot_commander()` to get the commander class from the container. It also provides
+a FossabotCommander facade. The package is bound to the container under the
+`Brandon14\FossabotCommander\Contracts\FossabotCommander` interface, and also as the
+alias `fossabot-commander`.
 
 ## Installation
 
@@ -92,10 +78,10 @@ composer require brandon14/fossabot-commander-laravel
 
 ## Usage
 
-You will first need to get the custom API token from the request header. It will be in the 
+You will first need to get the custom API token from the request header. It will be in the
 `x-fossabot-customapitoken` header.
 
-For a simple command (using Laravel as an example web framework):
+For a simple command in Laravel:
 
 ```php
 // FooCommand.php
@@ -144,7 +130,7 @@ class Controller extends BaseController
     {
         $this->commander = $commander;
     }
-    
+
     public function fooCommand(Request $request): string
     {
         // Get Fossabot API token.
@@ -155,15 +141,72 @@ class Controller extends BaseController
     }
 }
 ```
+To use the facade:
 
-The `FossabotCommander` class requires a PSR compliant `ClientInterface` and a PSR compliant
-`RequestFactoryInterface`. These can be provided by libraries like `guzzle/guzzle` or other PSR
-compliant libraries. In the above example with Laravel we are assuming that the Laravel container
-has the `FossabotCommander` instance bound to the container.
+```php
+<?php
 
-For more complicated commands, the sky is the limit. Depending on how you want to build and instantiate
-your `FossabotCommand` instances, you can use the `FossabotContext` data to provide rich integration
-for your Fossabot chatbot!
+declare(strict_types=1);
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Fossabot\Commands\FooCommand;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+
+class Controller extends BaseController
+{
+    use AuthorizesRequests;
+    use ValidatesRequests;
+
+    public function fooCommand(Request $request): string
+    {
+        // Get Fossabot API token.
+        $apiToken = $request->header('x-fossabot-customapitoken');
+
+        return fossabot_commander()->runCommand(new FooCommand(), $apiToken);
+    }
+}
+```
+
+To use the helper:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Fossabot\Commands\FooCommand;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Brandon14\FossabotCommanderLaravel\Facades\FossabotCommander;
+
+class Controller extends BaseController
+{
+    use AuthorizesRequests;
+    use ValidatesRequests;
+    
+    public function fooCommand(Request $request): string
+    {
+        // Get Fossabot API token.
+        $apiToken = $request->header('x-fossabot-customapitoken');
+
+        return FossabotCommander::runCommand(new FooCommand(), $apiToken);
+    }
+}
+```
+
+To make commands via the Artisan command:
+
+```bash
+php artisan make:fossabot-command NameOfCommand
+```
 
 ## Standards
 
@@ -180,7 +223,7 @@ code added.
 
 ## Documentation
 
-Documentation to this project can be found [here](https://brandon14.github.io/fossabot-commander/).
+Documentation to this project can be found [here](https://brandon14.github.io/fossabot-commander-laravel/).
 
 ## Contributing
 
