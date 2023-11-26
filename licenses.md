@@ -35,7 +35,7 @@ SOFTWARE.
 
 ## Dependencies
 
-### brandon14/fossabot-commander (Version v1.0.0 | 6d9c524)
+### brandon14/fossabot-commander (Version v1.0.0 | 5a7f27e)
 Library to easily create Fossabot commands invokable via the Fossabot customapi implementation.
 Homepage: [https://github.com/brandon14/fossabot-commander](https://github.com/brandon14/fossabot-commander)
 Licenses Used: MIT
