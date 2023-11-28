@@ -14,20 +14,24 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        php: [7.4, 8.0, 8.1, 8.2]
+        php: [7.4, 8.0, 8.1, 8.2, 8.3]
+        laravel: [8.*, 9.*, 10.*]
         dependency-version: [prefer-lowest, prefer-stable]
         experimental: [false]
         include:
-          - php: 8.3
-            os: ubuntu-latest
-            dependency-version: prefer-lowest
-            experimental: true
-          - php: 8.3
-            os: ubuntu-latest
-            dependency-version: prefer-stable
-            experimental: true
+          - laravel: 10.*
+            testbench: ^8.0
+          - laravel: 9.*
+            testbench: ^7.0
+          - laravel: 8.*
+            testbench: ^6.0
+        exclude:
+          - laravel: 10.*
+            php: [7.4, 8.0]
+          - laravel: 9.*
+            php: [7.4]
 
-    name: PHP-${{ matrix.php }} - OS-${{ matrix.os }} - ${{ matrix.dependency-version }} - Experimental- ${{ matrix.experimental }}
+    name: PHP-${{ matrix.php }} - OS-${{ matrix.os }} - Laravel-${{ matrix.laravel}} - ${{ matrix.dependency-version }} - Experimental- ${{ matrix.experimental }}
 
     steps:
       - name: Update apt
@@ -46,6 +50,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer self-update
+          composer require "laravel/framework:${{ matrix.laravel}}" "orchestra/testbench:${{ matrix.testbench}}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
           composer dump-autoload
           composer validate --no-check-all --strict
@@ -54,7 +59,7 @@ jobs:
         run: composer run-script test
 
       - name: Upload coverage
-        if: ${{ github.event_name != 'schedule' && matrix.php == '8.2' }}
+        if: ${{ github.event_name != 'schedule' && matrix.php == '8.3' && matrix.dependency-version == 'prefer-stable' && matrix.laravel == '10.* }}
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
@@ -62,7 +67,7 @@ jobs:
           fail_ci_if_error: true
           files: ./coverage.xml
       - name: Upload code climate
-        if: ${{ github.event_name != 'schedule' && matrix.php == '8.2' }}
+        if: ${{ github.event_name != 'schedule' && matrix.php == '8.3' && matrix.dependency-version == 'prefer-stable' && matrix.laravel == '10.* }}
         uses: paambaati/codeclimate-action@v5
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
