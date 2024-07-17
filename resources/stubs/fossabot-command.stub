@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Brandon14\FossabotCommander\FossabotCommand;
+use Brandon14\FossabotCommander\Contracts\Context\FossabotContext;
+
+final class {{ class }} extends FossabotCommand
+{
+    /**
+     * Create a new {{ class }} instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        // TODO: Auto generated constructor stub.
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getResponse(?FossabotContext $context = null): string
+    {
+        // TODO: Auto generated method stub.
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function toArray()
+    {
+        return [];
+    }
+}

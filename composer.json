@@ -1,0 +1,142 @@
+{
+    "name": "brandon14/fossabot-commander-laravel",
+    "description": "Library to bridge the brandon14/fossabot-commander library to a Laravel application.",
+    "keywords": [
+        "library",
+        "laravel",
+        "fossabot"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/brandon14/fossabot-commander-laravel",
+    "support": {
+        "issues": "https://github.com/brandon14/fossabot-commander-laravel/issues",
+        "source": "https://github.com/brandon14/fossabot-commander-laravel",
+        "email": "brandon14125@gmail.com"
+    },
+    "authors": [
+        {
+            "name": "Brandon Clothier",
+            "email": "brandon14125@gmail.com",
+            "homepage": "https://brandonclothier.me",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Brandon14\\FossabotCommanderLaravel\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brandon14\\FossabotCommanderLaravel\\Tests\\": "tests/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "brandon14/fossabot-commander": "^1.0.0",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "guzzlehttp/psr7": "^2.4.5",
+        "illuminate/console": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0"
+    },
+    "require-dev": {
+        "comcast/php-legal-licenses": "^1.2",
+        "friendsofphp/php-cs-fixer": "^3.35",
+        "mockery/mockery": "^1.6",
+        "neronmoon/scriptsdev": "^0.1.9",
+        "nunomaduro/phpinsights": "^2.9",
+        "orchestra/testbench": "^6.38.0 || ^7.35.0 || ^8.15.0 || ^9.2.0",
+        "pestphp/pest": "^1.23.1",
+        "pestphp/pest-plugin-laravel": "^1.4",
+        "pestphp/pest-plugin-parallel": "^1.2",
+        "phpmd/phpmd": "^2.14",
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "^3.7",
+        "symfony/thanks": "^1.2.10",
+        "vimeo/psalm": "^5.15"
+    },
+    "scripts": {
+        "analyze:psalm": "psalm",
+        "analyze:stats": "@composer run-script analyze:psalm -- --stats",
+        "analyze:insights": "phpinsights",
+        "composer:validate": "@composer validate --no-check-all --strict",
+        "lint:phpcs:check": "phpcs ./",
+        "lint:phpcs:fix": "phpcbf ./",
+        "lint:phpmd": "phpmd ./ text ./phpmd.xml.dist",
+        "lint:php-cs-fixer:fix": [
+            "@putenv PHP_CS_FIXER_IGNORE_ENV=1",
+            "php-cs-fixer fix"
+        ],
+        "lint:php-cs-fixer:check": "@composer run-script lint:php-cs-fixer:fix -- --dry-run --verbose",
+        "lint": [
+            "@composer run-script lint:phpcs:check",
+            "@composer run-script lint:php-cs-fixer:check",
+            "@composer run-script lint:phpmd"
+        ],
+        "lint:fix": [
+            "@composer run-script lint:phpcs:fix",
+            "@composer run-script lint:php-cs-fixer:fix"
+        ],
+        "test:php": [
+            "@putenv XDEBUG_MODE=coverage",
+            "pest --coverage --min=95 --coverage-html ./coverage --coverage-clover ./coverage.xml --order-by random --cache-result"
+        ],
+        "test": [
+            "@composer run-script composer:validate",
+            "@composer check-platform-reqs --no-dev",
+            "@composer run-script lint",
+            "@composer run-script test:php"
+        ],
+        "licenses:generate": [
+            "php-legal-licenses generate",
+            "@php ./scripts/copy-license.php"
+        ],
+        "post-update-cmd": [
+            "@composer run-script composer:validate"
+        ],
+        "post-install-cmd": [
+            "@composer run-script composer:validate"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev",
+            "dev-main": "1.0-dev",
+            "dev-latest": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Brandon14\\FossabotCommanderLaravel\\FossabotCommanderServiceProvider"
+            ],
+            "aliases": {
+                "FossabotCommander": "Brandon14\\FossabotCommanderLaravel\\Facades\\FossabotCommander"
+            }
+        },
+        "scripts-dev": {
+            "post-update-cmd": [
+                "@composer run-script licenses:generate"
+            ],
+            "post-install-cmd": [
+                "@composer run-script licenses:generate"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "symfony/thanks": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "pestphp/pest-plugin": true,
+            "neronmoon/scriptsdev": true
+        },
+        "sort-packages": true
+    }
+}
