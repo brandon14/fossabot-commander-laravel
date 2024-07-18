@@ -54,13 +54,13 @@ style=for-the-badge&cacheSeconds=3600">
 
 ## Requirements
 
-| Dependency                    | Version                   |
-|-------------------------------|---------------------------|
-| php                           | ^7.4 \|\| ^8.0            |
-| brandon14/fossabot-commander  | ^1.0.0                    |
-| guzzlehttp/guzzle             | ^6.5.8 \|\| ^7.4.5        |
-| illuminate/console            | ^8.0 \|\| ^9.0 \|\| ^10.0 |
-| illuminate/support            | ^8.0 \|\| ^9.0 \|\| ^10.0 |
+| Dependency                    | Version                              |
+|-------------------------------|--------------------------------------|
+| php                           | ^7.4 \|\| ^8.0                       |
+| brandon14/fossabot-commander  | ^1.0.0                               |
+| guzzlehttp/guzzle             | ^6.5.8 \|\| ^7.4.5                   |
+| illuminate/console            | ^8.0 \|\| ^9.0 \|\| ^10.0 \|\| ^11.0 |
+| illuminate/support            | ^8.0 \|\| ^9.0 \|\| ^10.0 \|\| ^11.0 |
 
 ## Purpose
 
