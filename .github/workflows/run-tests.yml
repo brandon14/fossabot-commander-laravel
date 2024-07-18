@@ -87,7 +87,7 @@ jobs:
           composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
           composer require --dev "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
-          composer require --dev "pestphp/pest-plugin-laravel:${{ matrix.pest-laravel }} --no-interaction --no-update
+          composer require --dev "pestphp/pest-plugin-laravel:${{ matrix.pest-laravel }}" --no-interaction --no-update
           composer dump-autoload
           composer validate --no-check-all --strict
 
