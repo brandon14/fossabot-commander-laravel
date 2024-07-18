@@ -60,7 +60,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer self-update
-          composer require "laravel/framework:${{ matrix.laravel }} --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
           composer dump-autoload
           composer validate --no-check-all --strict
