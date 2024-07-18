@@ -42,15 +42,19 @@ jobs:
           - laravel: 11.*
             testbench: ^9.2.0
             pest-laravel: ^2.4.0
+            pest: ^2.34.9
           - laravel: 10.*
             testbench: ^8.15.0
             pest-laravel: ^1.4.0
+            pest: ^1.23.1
           - laravel: 9.*
             testbench: ^7.35.0
             pest-laravel: ^1.4.0
+            pest: ^1.23.1
           - laravel: 8.*
             testbench: ^6.38.0
             pest-laravel: ^1.4.0
+            pest: ^1.23.1
         exclude:
           - laravel: 11.*
             php: 7.4
@@ -87,6 +91,7 @@ jobs:
           composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
           composer require --dev "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer require --dev "pestphp/pest-plugin-laravel:${{ matrix.pest-laravel }}" --no-interaction --no-update
+          composer require --dev "pestphp/pest:${{ matrix.pest }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
           composer dump-autoload
           composer validate --no-check-all --strict

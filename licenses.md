@@ -88,7 +88,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-### carbonphp/carbon-doctrine-types (Version 2.1.0 | 99f76ff)
+### carbonphp/carbon-doctrine-types (Version 3.2.0 | 18ba5dd)
 Types to use Carbon in Doctrine
 Homepage: Not configured.
 Licenses Used: MIT
@@ -417,7 +417,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### laravel/framework (Version v10.48.16 | f9a3a50)
+### laravel/framework (Version v11.16.0 | bd4808a)
 The Laravel Framework.
 Homepage: [https://laravel.com](https://laravel.com)
 Licenses Used: MIT
@@ -666,7 +666,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### nesbot/carbon (Version 2.72.5 | afd4658)
+### nesbot/carbon (Version 3.7.0 | cb43747)
 An API extension for DateTime that supports 281 different languages.
 Homepage: [https://carbon.nesbot.com](https://carbon.nesbot.com)
 Licenses Used: MIT
@@ -823,7 +823,7 @@ you URLs with full text:
 - [GPL version 3]([http://www.gnu.org/licenses/gpl-3.0.html](http://www.gnu.org/licenses/gpl-3.0.html))
 
 
-### nunomaduro/termwind (Version v1.15.1 | 8ab0b32)
+### nunomaduro/termwind (Version v2.0.1 | 58c4c58)
 Its like Tailwind CSS, but for the console.
 Homepage: Not configured.
 Licenses Used: MIT
@@ -1341,7 +1341,32 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### symfony/console (Version v6.4.9 | 6edb536)
+### symfony/clock (Version v7.1.1 | 3dfc8b0)
+Decouples applications from the system clock
+Homepage: [https://symfony.com](https://symfony.com)
+Licenses Used: MIT
+Copyright (c) 2022-present Fabien Potencier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+### symfony/console (Version v7.1.2 | 0aa29ca)
 Eases the creation of beautiful and testable command line interfaces
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1416,7 +1441,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/error-handler (Version v6.4.9 | c9b7cc0)
+### symfony/error-handler (Version v7.1.2 | 2412d3d)
 Provides tools to manage errors and ease debugging PHP code
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1491,7 +1516,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/finder (Version v6.4.8 | 3ef977a)
+### symfony/finder (Version v7.1.1 | fbb0ba6)
 Finds files and directories via an intuitive fluent interface
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1516,7 +1541,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/http-foundation (Version v6.4.8 | 27de8cc)
+### symfony/http-foundation (Version v7.1.1 | 74d171d)
 Defines an object-oriented layer for the HTTP specification
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1541,7 +1566,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/http-kernel (Version v6.4.9 | cc4a9be)
+### symfony/http-kernel (Version v7.1.2 | ae3fa71)
 Provides a structured process for converting a Request into a Response
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1566,7 +1591,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/mailer (Version v6.4.9 | e2d56f1)
+### symfony/mailer (Version v7.1.2 | 8fcff0a)
 Helps sending emails
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1591,7 +1616,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/mime (Version v6.4.9 | 7d04896)
+### symfony/mime (Version v7.1.2 | 26a00b8)
 Allows manipulating MIME messages
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1841,7 +1866,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/process (Version v6.4.8 | 8d92dd7)
+### symfony/process (Version v7.1.1 | febf901)
 Executes commands in sub-processes
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1866,7 +1891,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/routing (Version v6.4.8 | 8a40d0f)
+### symfony/routing (Version v7.1.1 | 60c31ba)
 Maps an HTTP request to a set of configuration variables
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1941,7 +1966,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/translation (Version v6.4.8 | a002933)
+### symfony/translation (Version v7.1.1 | cf5ae13)
 Provides tools to internationalize your application
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -1991,7 +2016,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/uid (Version v6.4.8 | 35904ec)
+### symfony/uid (Version v7.1.1 | bb59feb)
 Provides an object-oriented API to generate and represent UIDs
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
@@ -2016,7 +2041,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### symfony/var-dumper (Version v6.4.9 | c31566e)
+### symfony/var-dumper (Version v7.1.2 | 5857c57)
 Provides mechanisms for walking through any arbitrary PHP variable
 Homepage: [https://symfony.com](https://symfony.com)
 Licenses Used: MIT
