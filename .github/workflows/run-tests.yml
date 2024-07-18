@@ -27,14 +27,6 @@ jobs:
             experimental: true
             os: ubuntu-latest
             dependency-version: prefer-stable
-          - laravel: 11.*
-            testbench: ^9.2.0
-          - laravel: 10.*
-            testbench: ^8.15.0
-          - laravel: 9.*
-            testbench: ^7.35.0
-          - laravel: 8.*
-            testbench: ^6.38.0
         exclude:
           - laravel: 11.*
             php: 7.4
@@ -49,7 +41,7 @@ jobs:
           - laravel: 9.*
             php: 7.4
 
-    name: PHP-${{ matrix.php }} - OS-${{ matrix.os }} - ${{ matrix.dependency-version }} - Experimental- ${{ matrix.experimental }}
+    name: PHP-${{ matrix.php }} - OS-${{ matrix.os }} L-${{ matrix.laravel }} - ${{ matrix.dependency-version }} - Experimental- ${{ matrix.experimental }}
 
     steps:
       - name: Update apt
@@ -68,6 +60,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer self-update
+          composer require "laravel/framework:${{ matrix.laravel }} --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
           composer dump-autoload
           composer validate --no-check-all --strict
