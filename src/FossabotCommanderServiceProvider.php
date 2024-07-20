@@ -69,8 +69,11 @@ final class FossabotCommanderServiceProvider extends ServiceProvider
         // Bind FossabotCommander as singleton.
         $this->app->singleton(FossabotCommanderInterface::class, static function (Container $app) {
             $config = $app->make('config')->get('fossabot-commander');
-            $logging = $config['logging']['enable'];
-            $channel = $config['logging']['channel'];
+            $logging = isset($config['logging']['enable']) && $config['logging']['enable'];
+            $channel = isset($config['logging']['channel']) ? (string) $config['logging']['channel'] : 'default';
+            /** @noinspection PhpVariableNamingConventionInspection */
+            $includeLogContext = isset($config['logging']['include_context'])
+                && $config['logging']['include_context'];
 
             // If logging is enabled, get the logger for the configured channel, otherwise set as null.
             $logger = $logging ? $app->make('log')->channel($channel) : null;
@@ -93,7 +96,7 @@ final class FossabotCommanderServiceProvider extends ServiceProvider
                 $request = $app->make(HttpFactory::class);
             }
 
-            return new FossabotCommander($http, $request, $logger, $logging);
+            return new FossabotCommander($http, $request, $logger, $logging, $includeLogContext);
         });
 
         // Add alias.

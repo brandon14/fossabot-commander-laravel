@@ -49,7 +49,7 @@ final class MakeFossabotCommand extends GeneratorCommand
     /**
      * {@inheritDoc}
      */
-    protected $signature = 'make:fossabot-command
+    protected $signature = 'fossabot:make:command
                             {name : Name of command class}
                             {--force : Whether to overwrite command if it already exists}';
 
