@@ -3,10 +3,7 @@
   <a href="https://packagist.org/packages/brandon14/fossabot-commander-laravel" target="_blank"><img alt="Packagist PHP Version" src="https://img.shields.io/packagist/dependency-v/brandon14/fossabot-commander-laravel/php?style=for-the-badge&cacheSeconds=3600"></a>
 </p>
 <p align="center">
-  <a href="https://github.com/brandon14/fossabot-commander-laravel/actions/workflows/run-tests.yml" 
-target="_blank"><img alt="GitHub Workflow Status (with event)" src="https://img.shields.
-io/github/actions/workflow/status/brandon14/fossabot-commander-laravel/run-tests.yml?
-style=for-the-badge&cacheSeconds=3600">
+  <a href="https://github.com/brandon14/fossabot-commander-laravel/actions/workflows/run-tests.yml" target="_blank"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/brandon14/fossabot-commander-laravel/run-tests.yml?style=for-the-badge&cacheSeconds=3600">
   </a>
   <a href="https://codeclimate.com/github/brandon14/fossabot-commander-laravel/maintainability" target="_blank"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability-percentage/brandon14/fossabot-commander-laravel?style=for-the-badge&cacheSeconds=3600">
   </a>
@@ -57,7 +54,7 @@ style=for-the-badge&cacheSeconds=3600">
 | Dependency                    | Version                              |
 |-------------------------------|--------------------------------------|
 | php                           | ^7.4 \|\| ^8.0                       |
-| brandon14/fossabot-commander  | ^1.0.0                               |
+| brandon14/fossabot-commander  | ^1.0.2                               |
 | guzzlehttp/guzzle             | ^6.5.8 \|\| ^7.4.5                   |
 | illuminate/console            | ^8.0 \|\| ^9.0 \|\| ^10.0 \|\| ^11.0 |
 | illuminate/support            | ^8.0 \|\| ^9.0 \|\| ^10.0 \|\| ^11.0 |
@@ -211,7 +208,7 @@ class Controller extends BaseController
 To make commands via the Artisan command:
 
 ```bash
-php artisan make:fossabot-command NameOfCommand
+php artisan fossabot:make:command NameOfCommand
 ```
 
 ## Standards
