@@ -35,7 +35,7 @@ SOFTWARE.
 
 ## Dependencies
 
-### brandon14/fossabot-commander (Version v1.0.0 | 73b8109)
+### brandon14/fossabot-commander (Version v1.0.2 | c31399f)
 Library to easily create Fossabot commands invokable via the Fossabot customapi implementation.
 Homepage: [https://github.com/brandon14/fossabot-commander](https://github.com/brandon14/fossabot-commander)
 Licenses Used: MIT
@@ -293,7 +293,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### guzzlehttp/guzzle (Version 7.8.1 | 41042bc)
+### guzzlehttp/guzzle (Version 7.9.1 | a629e5b)
 Guzzle is a PHP HTTP client library
 Homepage: Not configured.
 Licenses Used: MIT
@@ -326,7 +326,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### guzzlehttp/promises (Version 2.0.2 | bbff78d)
+### guzzlehttp/promises (Version 2.0.3 | 6ea8dd0)
 Guzzle promises library
 Homepage: Not configured.
 Licenses Used: MIT
@@ -356,7 +356,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-### guzzlehttp/psr7 (Version 2.6.2 | 45b30f9)
+### guzzlehttp/psr7 (Version 2.7.0 | a70f5c9)
 PSR-7 message implementation that also provides common utility methods
 Homepage: Not configured.
 Licenses Used: MIT

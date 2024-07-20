@@ -55,6 +55,18 @@ return [
 
         /*
         |--------------------------------------------------------------------------
+        | Include Additional Logging Context
+        |--------------------------------------------------------------------------
+        |
+        | This options controls whether additional FossabotCommander context should
+        | be included when calling logger methods.
+        |
+        */
+
+        'include_context' => env('FOSSABOT_COMMANDER_INCLUDE_LOGGING_CONTEXT', true),
+
+        /*
+        |--------------------------------------------------------------------------
         | Logging Channel
         |--------------------------------------------------------------------------
         |

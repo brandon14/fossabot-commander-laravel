@@ -208,7 +208,7 @@ class Controller extends BaseController
 To make commands via the Artisan command:
 
 ```bash
-php artisan make:fossabot-command NameOfCommand
+php artisan fossabot:make:command NameOfCommand
 ```
 
 ## Standards
