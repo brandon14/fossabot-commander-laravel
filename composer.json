@@ -106,9 +106,9 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev",
-            "dev-main": "1.0-dev",
-            "dev-latest": "1.0-dev"
+            "dev-master": "2.0-dev",
+            "dev-main": "2.0-dev",
+            "dev-latest": "2.0-dev"
         },
         "laravel": {
             "providers": [
