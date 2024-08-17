@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - main
       - 1.0-dev
+      - 2.0-dev
       - gh-pages
 
 jobs:
@@ -39,4 +40,5 @@ jobs:
         with:
           commit_message: "chore: Fix styling from PHP-CS-Fixer"
           commit_user_name: brandon14
+          commit_user_email: brandon14125@gmail.com
           commit_options: '-S'
